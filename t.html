@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tamil Songs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="//connect.soundcloud.com/sdk.js"></script>
+		<script
+						src="https://code.jquery.com/jquery-3.2.1.js"
+						integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+		crossorigin="anonymous"></script>
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <script src="JS/main.js"></script>
+	</head>
+	<body>
+
+        <style>
+            #main {
+		padding: 0em 0 6em 0 ;
+	}
+
+    /* Menu */
+
+	#wrapper {
+		-moz-transition: opacity 0.45s ease;
+		-webkit-transition: opacity 0.45s ease;
+		-ms-transition: opacity 0.45s ease;
+		transition: opacity 0.45s ease;
+		opacity: 1;
+	}
+
+	#menu {
+		-moz-transform: translateX(22em);
+		-webkit-transform: translateX(22em);
+		-ms-transform: translateX(22em);
+		transform: translateX(22em);
+		-moz-transition: -moz-transform 0.45s ease, visibility 0.45s;
+		-webkit-transition: -webkit-transform 0.45s ease, visibility 0.45s;
+		-ms-transition: -ms-transform 0.45s ease, visibility 0.45s;
+		transition: transform 0.45s ease, visibility 0.45s;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 22em;
+		max-width: 80%;
+		height: 100%;
+		-webkit-overflow-scrolling: touch;
+		background: #585858;
+		color: #ffffff;
+		cursor: default;
+		visibility: hidden;
+		z-index: 10002;
+	}
+
+		#menu > .inner {
+			-moz-transition: opacity 0.45s ease;
+			-webkit-transition: opacity 0.45s ease;
+			-ms-transition: opacity 0.45s ease;
+			transition: opacity 0.45s ease;
+			-webkit-overflow-scrolling: touch;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 2.75em;
+			opacity: 0;
+			overflow-y: auto;
+		}
+
+			#menu > .inner > ul {
+				list-style: none;
+				margin: 0 0 1em 0;
+				padding: 0;
+			}
+
+				#menu > .inner > ul > li {
+					padding: 0;
+					border-top: solid 1px rgba(255, 255, 255, 0.15);
+				}
+
+					#menu > .inner > ul > li a {
+						display: block;
+						padding: 1em 0;
+						line-height: 1.5;
+						border: 0;
+						color: inherit;
+					}
+
+					#menu > .inner > ul > li:first-child {
+						border-top: 0;
+						margin-top: -1em;
+					}
+
+        </style>
+		
+							<!-- Logo -->
+								<a href="index.html" class="logo"></a>
+						</div>
+					</header>
+
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Soundcloud MusicPlayer<br />
+								</h1>
+
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>AEM<br>Thalli Pogathey</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start13">Start</button>
+														<button type="button" name="button" id="stop13">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Enao Noki Payum Thoda<br>Maruvarthai Pesathey</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start14">Start</button>
+														<button type="button" name="button" id="stop14">Stop</button>
+										</div>
+
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Geethaiyin Raman<br>Ennai Kollathey</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start15">Start</button>
+														<button type="button" name="button" id="stop15">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>David<br>Kannave Kannave</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start16">Start</button>
+														<button type="button" name="button" id="stop16">Stop</button>
+										</div>
+
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Mariyan<br>Innum Koja neram</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start17">Start</button>
+														<button type="button" name="button" id="stop17">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Jilla<br>Kandaangi Kandaangi</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start18">Start</button>
+														<button type="button" name="button" id="stop18">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="images/pic07.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Thani Oruvan<br>Kadhal Cricket</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start19">Start</button>
+														<button type="button" name="button" id="stop19">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="images/pic08.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Kannadi Poovukku</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start20">Start</button>
+														<button type="button" name="button" id="stop20">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="images/pic09.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Remo<br>Senjitaley</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+											<button type="button" name="button" id="start21">Start</button>
+														<button type="button" name="button" id="stop21">Stop</button>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="images/pic10.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Enthiran<br>Kadal Anukkal</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+                      <button type="button" name="button" id="start22">Start</button>
+                            <button type="button" name="button" id="stop22">Stop</button>
+                    </div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="images/pic11.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Dharmadurai<br>Aandipatti</h2>
+										<div class="content">
+											<p>Soundcloud Music</p>
+                      <button type="button" name="button" id="start23">Start</button>
+                            <button type="button" name="button" id="stop23">Stop</button>
+                    </div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="images/pic12.jpg" alt="" />
+									</span>
+									<a href="">
+										<h2>Naanum Rowdy Dhaan<br>Neeyum Naanum</h2>
+										<div class="content">
+                      <p>Soundcloud Music</p>
+                      <button type="button" name="button" id="start24">Start</button>
+                            <button type="button" name="button" id="stop24">Stop</button>
+                    </div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+</div>
+</body>
+</html>

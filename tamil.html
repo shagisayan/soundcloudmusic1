@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil Song</title>
+    <link rel="stylesheet" href="tamil.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
+    
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="btn">Home</a></li>
+            <li><a href="tamil.html">Tamil</a></li>
+            <li><a href="english.html">English</a></li>
+            <li><a href="hindi.html">Hindi</a></li>
+        </ul>
+    </nav>
+    
+<div class="main1">
+    <!--top bar -->
+    <div class="top_bar">
+        <button onclick="sidebar()"> <i class='bx bxs-chevron-right'></i></button> 
+        <div class="options">
+            <button><i class='bx bx-music' ></i></button>
+            <button><i class='bx bxs-volume-low' ></i></button>
+            <button><i class='bx bx-edit-alt' ></i></button>
+        </div>
+        <button onclick="open_p()"><i class='bx bx-menu-alt-left' ></i></button>
+    </div>
+    <div class="playing_part">
+        <div class="img">
+            <img src="/home/user/Documents/soundcloudmusic/musicplayer/img/s1.jpg" alt="songone">
+        </div>
+        <!--control part-->
+        <div class="control_part">
+            <div class="song_title">
+                <p>Ponmagal Vandhal</p>
+                <p>Govind Vasantha</p>
+            </div>
+            <div class="control_buttons">
+             <div class="range_slider">
+                <input type="range" min="0" max="100" id="slider" value="0"> 
+                <p>5.00</p>
+            
+             </div>
+             <div class="main1_btns">
+                <button id="previous"><i class='bx bx-skip-previous' ></i></button> 
+                <button id="play_btn" class="start1"><i class='bx bxl-play-store' ></i></button> 
+                <button id="play_btn" class="stop1"><i class='bx bx-stop'></i></button> 
+                <button id="previous"><i class='bx bx-skip-next' ></i></button> 
+             </div>
+        </div>
+
+            <!--playlist song-->
+            <div class="playlist">
+                <div class="p_song">
+                    <p id="p_title">Oh My Kadavule</p>
+                    <p id="p_artist">Leon James</p>
+                    <button><i class='bx bxl-play-store' ></i></button>
+                </div>
+
+                <div class="p_song active_song">
+                    <p id="p_title">Gypsy</p>
+                    <p id="p_artist">Susheela Raman, Santhosh Narayanan</p>
+                    <button><i class='bx bxl-play-store' ></i></button>
+                </div>
+
+                <div class="p_song ">
+                    <p id="p_title">Kannum Kannum Kollaiyadithaal</p>
+                    <p id="p_artist">Masala Coffee, Harshavardhan Rameshwar</p>
+                    <button><i class='bx bxl-play-store' ></i></button>
+                </div>
+
+                
+
+                <div class="p_song">
+                    <p id="p_title">Naan Sirithal</p>
+                    <p id="p_artist">Hiphop Tamizha Adhi, Hiphop Tamizha</p>
+                    <button><i class='bx bxl-play-store' ></i></button>
+                </div>
+            </div>
+</div>
+<!--javascript part-->
+<script>
+let  playlist = document.querySelector('.playlist');
+let options = document.querySelector('.options');
+
+function open_p(){
+      playlist.classList.toggle('active');
+}
+
+function sidebar(){
+ options.classList.toggle('active2')
+}
+</script>
+
+
+<script src="jquery-3.3.1.js"></script>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script src="song.js"></script>
+
+</body>
+</html>
