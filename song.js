@@ -146,5 +146,77 @@ SC.stream('/tracks/192032277',function(sound){
 
 });
 
+/*hindi songs */
+
+SC.stream('/tracks/85728261',function(sound){ 
+
+  $('.start11').click(function(e) {
+    e.preventDefault();
+    sound.start();
+  });
+
+  $('.stop11').click(function(e){
+      e.preventDefault();
+      sound.stop();
+  });
+
+});
+
+SC.stream('/tracks/199477840',function(sound){ 
+
+  $('.start12').click(function(e) {
+    e.preventDefault();
+    sound.start();
+  });
+
+  $('.stop12').click(function(e){
+      e.preventDefault();
+      sound.stop();
+  });
+
+});
+
+SC.stream('/tracks/237118392',function(sound){ 
+
+  $('.start13').click(function(e) {
+    e.preventDefault();
+    sound.start();
+  });
+
+  $('.stop13').click(function(e){
+      e.preventDefault();
+      sound.stop();
+  });
+
+});
+
+SC.stream('/tracks/166669642',function(sound){ 
+
+  $('.start14').click(function(e) {
+    e.preventDefault();
+    sound.start();
+  });
+
+  $('.stop14').click(function(e){
+      e.preventDefault();
+      sound.stop();
+  });
+
+});
+
+SC.stream('/tracks/123676319',function(sound){ 
+
+  $('.start15').click(function(e) {
+    e.preventDefault();
+    sound.start();
+  });
+
+  $('.stop15').click(function(e){
+      e.preventDefault();
+      sound.stop();
+  });
+
+});
+
 });   
 

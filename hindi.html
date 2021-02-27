@@ -7,6 +7,7 @@
     <title>Hindi Song</title>
     <link rel="stylesheet" href="tamil.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//connect.soundcloud.com/sdk.js"></script>
 </head>
 <body>
 
@@ -37,7 +38,7 @@
         <!--control part-->
         <div class="control_part">
             <div class="song_title">
-                <p>Dear Comrade</p>
+                <p>Teri Meri </p>
                 <p>Justin Prabhakaran</p>
             </div>
             <div class="control_buttons">
@@ -47,7 +48,8 @@
              </div>
              <div class="main1_btns">
                 <button id="previous"><i class='bx bx-skip-previous' ></i></button> 
-                <button id="play_btn"><i class='bx bxl-play-store' ></i></button> 
+                <button id="play_btn" class="start11"><i class='bx bxl-play-store' ></i></button> 
+                <button id="play_btn" class="stop11"><i class='bx bx-stop'></i></button> 
                 <button id="previous"><i class='bx bx-skip-next' ></i></button> 
              </div>
             </div>
@@ -55,27 +57,31 @@
             <!--playlist song-->
             <div class="playlist">
                 <div class="p_song">
-                    <p id="p_title">song name</p>
-                    <p id="p_artist">artist name</p>
-                    <button><i class='bx bxl-play-store' ></i></button>
+                    <p id="p_title">Rab Ne Bana Di Jodi</p>
+                    <p id="p_artist">Salim–Sulaiman</p>
+                    <button class="start12"><i class='bx bxl-play-store' ></i></button>
+                    <button class="stop12"><i class='bx bx-stop'></i></button>
                 </div>
 
                 <div class="p_song active_song">
-                    <p id="p_title">song name</p>
-                    <p id="p_artist">artist name</p>
-                    <button><i class='bx bxl-play-store' ></i></button>
+                    <p id="p_title">Bajirao Mastani</p>
+                    <p id="p_artist">Sanjay Leela Bhansali</p>
+                    <button class="start13"><i class='bx bxl-play-store' ></i></button>
+                    <button class="stop13"><i class='bx bx-stop'></i></button>
                 </div>
 
                 <div class="p_song">
-                    <p id="p_title">song name</p>
-                    <p id="p_artist">artist name</p>
-                    <button><i class='bx bxl-play-store' ></i></button>
+                    <p id="p_title"> Aashiqui 2</p>
+                    <p id="p_artist">Shreya Ghoshal</p>
+                    <button class="start14"><i class='bx bxl-play-store' ></i></button>
+                    <button class="stop14"><i class='bx bx-stop'></i></button>
                 </div>
 
                 <div class="p_song">
-                    <p id="p_title">song name</p>
-                    <p id="p_artist">artist name</p>
-                    <button><i class='bx bxl-play-store' ></i></button>
+                    <p id="p_title">RRajkumar</p>
+                    <p id="p_artist">Sandeep Chowta</p>
+                    <button class="start15"><i class='bx bxl-play-store' ></i></button>
+                    <button class="stop15"><i class='bx bx-stop'></i></button>
                 </div>
             </div>
         </div>
@@ -95,6 +101,9 @@ function sidebar(){
 }
 </script>
 
+<script src="jquery-3.3.1.js"></script>
+ <script src="jquery-3.3.1.min.js"></script>
+ <script src="song.js"></script>
 
 
 </body>
